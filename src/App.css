@@ -4,7 +4,7 @@
 }
 .searchbar{
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   padding-block: 20px;
   background-color: var(--orange);
 }
@@ -12,14 +12,17 @@ input{
   border: none;
   height: 25px;
 }
+input[type=text]:focus {
+  border:none;
+}
 .searchbtn{
   border: none;
   background: dodgerblue;
   color: white;
 }
 .container{
-  border-radius: 5px;
-  background: dodgerblue;
+border-radius: 5px;
+background: dodgerblue;
 display: flex;
 justify-content: space-between;
 padding-inline: 10px;
@@ -27,6 +30,13 @@ padding-block: 20px;
 margin: 20px 60px 40px 60px;
 text-transform: capitalize;
 color: white;
+}
+.main{
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .heading{
   display: flex;
